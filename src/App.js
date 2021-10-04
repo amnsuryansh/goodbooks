@@ -4,43 +4,43 @@ import { useState } from "react";
 
 const bookDB = {
   javascript: [
-    { name: "Eloquent JavaScript", rating: "4/5" },
-    { name: "You Don't Know JS", rating: "3.5/5" },
-    { name: "Secrets of the JavaScript Ninja ", rating: "3.8/5" }
+    { name: "Eloquent JavaScript", description: " This is a book about JavaScript, programming, and the wonders of the digital. ", rating: "4/5" },
+    { name: "You Don't Know JS",description: " No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. ", rating: "3.5/5" },
+    { name: "Head First Java",description: " And, despite its playful appearance, Head First Java is serious stuff: a complete introduction to object-oriented programming and Java. ", rating: "4.3/5" }
   ],
 
   fiction: [
     {
-      name: "Shiva Trilogy",
+      name: "Shiva Trilogy",description:"The Shiva Trilogy is the tale of the extraordinary man whose adventures 4000 years ago are remembered today as the myths of the Mahadev, the God of Gods. ",
       rating: "5/5"
     },
     {
-      name: "Harry Potter and the Sorcerer's Stone",
+      name: "Harry Potter and the Sorcerer's Stone",description:"It follows Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday, when he receives a letter of acceptance to Hogwarts School of Witchcraft and Wizardry. ",
       rating: "4.5/5"
     },
     {
-      name: "The Lord of the Rings",
+      name: "The Lord of the Rings",description:"The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil. ",
       rating: "4.5/5"
     }
   ],
   business: [
     {
-      name: "Never Split the Difference",
+      name: "Never Split the Difference",description:"Ever Split the Difference by Chris Voss and Tahl Raz is a guide to using hostage negotiation techniques in business and personal negotiations. ",
       rating: "3.5/5"
     },
     {
-      name: "Loonshots",
+      name: "Loonshots",description:"A loonshot challenges conventional wisdom. Whether a change is “disruptive” or not, on the other hand, refers to the effects of an invention on a market.",
       rating: "5/5"
     },
     {
-      name: "Rich Dad Poor Dad",
+      name: "Rich Dad Poor Dad",description:"Rich Dad Poor Dad tells the story of a boy with two fathers, one rich, one poor, to help you develop the mindset and financial knowledge you need to build a life of wealth and freedom.",
       rating: "4.1/5"
     }
   ],
   Poetry: [
-    { name: "Madhushala", rating: "4.6/5" },
-    { name: "Yama", rating: "3.8/5" },
-    { name: "Odyssey", rating: "4/5" }
+    { name: "Madhushala",description:" a book of 135 quatrains: verses of four lines (Ruba'i) by Hindi poet and writer Harivansh Rai Bachchan", rating: "4.6/5" },
+    { name: "Yama",description:"Mahadevi Verma always know how to make maximum use from minimum words.Few words and deeper meaning .Contains poems from her childhood, young age and then in the last phase of life.", rating: "3.8/5" },
+    { name: "Odyssey",description:"an epic poem attributed to Homer, describing Odysseus's adventures in his ten-year attempt to return home to Ithaca after the Trojan War.", rating: "4/5" }
   ]
 };
 
@@ -75,7 +75,7 @@ export default function App() {
         ))}
       </div>
       <hr />
-      <div style={{ textAlign: "center" }}>
+      <div style={{ textAlign: "center",width:"700px",margin:"0.5rem auto" }}>
         <ul style={{ paddingInlineStart: "0" }}>
           {bookDB[selectedGenre].map((book) => (
             <li
@@ -91,6 +91,12 @@ export default function App() {
             >
               {" "}
               <div style={{ fontSize: "larger" }}> {book.name} </div>
+              <div style={{
+                width: "500px",
+                fontSize:"x-small",
+                margin: "0.5rem auto",
+
+              }}> {book.description} </div>
               <div style={{ fontSize: "smaller" }}> {book.rating} </div>
             </li>
           ))}
