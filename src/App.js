@@ -6,7 +6,8 @@ const bookDB = {
   javascript: [
     { name: "Eloquent JavaScript", description: " This is a book about JavaScript, programming, and the wonders of the digital. ", rating: "4/5" },
     { name: "You Don't Know JS",description: " No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. ", rating: "3.5/5" },
-    { name: "Head First Java",description: " And, despite its playful appearance, Head First Java is serious stuff: a complete introduction to object-oriented programming and Java. ", rating: "4.3/5" }
+    { name: "Head First Java", description: " And, despite its playful appearance, Head First Java is serious stuff: a complete introduction to object-oriented programming and Java. ", rating: "4.3/5" },
+    { name: "Responsive Web Design with HTML5 and CSS",description: "this edition covers all the newest developments and improvements in responsive web design including better user accessibility, variable fonts and font loading, CSS Scroll Snap, and much, much more.", rating: "4.3/5" }
   ],
 
   fiction: [
@@ -21,6 +22,10 @@ const bookDB = {
     {
       name: "The Lord of the Rings",description:"The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil. ",
       rating: "4.5/5"
+    },
+    {
+      name: "The Alchemist",description:"The Alchemist is a novel by Brazilian author Paulo Coelho that was first published in 1988. Originally written in Portuguese, it became a widely translated international bestseller. ",
+      rating: "4.4/5"
     }
   ],
   business: [
@@ -35,12 +40,17 @@ const bookDB = {
     {
       name: "Rich Dad Poor Dad",description:"Rich Dad Poor Dad tells the story of a boy with two fathers, one rich, one poor, to help you develop the mindset and financial knowledge you need to build a life of wealth and freedom.",
       rating: "4.1/5"
+    },
+    {
+      name: "Zero to One",description:"Zero to One: Notes on Startups, or How to Build the Future is a 2014 book by the American entrepreneur and investor Peter Thiel co-written with Blake Masters.",
+      rating: "4.2/5"
     }
   ],
   Poetry: [
     { name: "Madhushala",description:" a book of 135 quatrains: verses of four lines (Ruba'i) by Hindi poet and writer Harivansh Rai Bachchan", rating: "4.6/5" },
     { name: "Yama",description:"Mahadevi Verma always know how to make maximum use from minimum words.Few words and deeper meaning .Contains poems from her childhood, young age and then in the last phase of life.", rating: "3.8/5" },
-    { name: "Odyssey",description:"an epic poem attributed to Homer, describing Odysseus's adventures in his ten-year attempt to return home to Ithaca after the Trojan War.", rating: "4/5" }
+    { name: "Odyssey",description:"an epic poem attributed to Homer, describing Odysseus's adventures in his ten-year attempt to return home to Ithaca after the Trojan War.", rating: "4/5" },
+    { name: "Madhukalash ",description:"Madhushala(The Tavern/The House of Wine) is a book of 135 quatrains: verses of four lines (Rubai) by Hindi poet and writer Harivansh Rai Bachchan .", rating: "4/5" }
   ]
 };
 
